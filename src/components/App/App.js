@@ -4,6 +4,12 @@ import Menu from '../Menu/Menu';
 import MainContent from '../MainContent/MainContent';
 import Footer from '../Footer/Footer';
 
+/*
+  I don't need keep selectedMenuOption and Menu classes in state because this tool gives me .active.
+   I'll made a decision based path  
+*/
+
+
 class App extends React.Component {
 
   constructor(props){
@@ -60,7 +66,7 @@ class App extends React.Component {
       <>
         <Menu selectOption={this.selectMenuOption} menuOptionClasses={this.state.menuOptionClasses}/>
         <MainContent selectedOption={this.state.selectedMenuOption}/>
-        <Footer/>
+        {/* <Footer/> */}
       </>
     );
 }
