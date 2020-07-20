@@ -3,6 +3,7 @@ import './App.css';
 import Menu from '../Menu/Menu';
 import MainContent from '../MainContent/MainContent';
 import Footer from '../Footer/Footer';
+import {BrowserRouter,Link,NavLink,Route} from 'react-router-dom'
 
 /*
   I don't need keep selectedMenuOption and Menu classes in state because this tool gives me .active.
@@ -63,11 +64,11 @@ class App extends React.Component {
   render(){
 
     return (
-      <>
+      <BrowserRouter>
         <Menu selectOption={this.selectMenuOption} menuOptionClasses={this.state.menuOptionClasses}/>
         <MainContent selectedOption={this.state.selectedMenuOption}/>
-        {/* <Footer/> */}
-      </>
+        <Footer/>
+      </BrowserRouter>
     );
 }
   
