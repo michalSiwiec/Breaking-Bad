@@ -1,0 +1,12 @@
+
+li:hover{
+    cursor: pointer;
+    transition: border-bottom 0.15s 0.35s;
+    border-bottom: 3px solid rgba(147, 5, 0, 0.9);
+}
+
+.selected{
+    color: rgba(147, 5, 0, 0.9);
+    /* background-color: black; */
+    /* font-size: 30px; */
+}

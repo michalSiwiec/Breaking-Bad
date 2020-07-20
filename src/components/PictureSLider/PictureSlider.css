@@ -1,0 +1,29 @@
+
+.pictureContainer{
+    width: 900px;
+    height: 600px;
+    /* border: 2px solid gold; */
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+    margin-bottom: 50px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.pictureContainer  img{
+    width: 100%;
+    /* width: 900px; */
+    height: 600px;
+}
+
+.switchContainer{
+    width: 15%;
+    height: 50px;
+    /* border: 2px solid white; */
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translate(-50%,0px);
+    display: flex;
+}

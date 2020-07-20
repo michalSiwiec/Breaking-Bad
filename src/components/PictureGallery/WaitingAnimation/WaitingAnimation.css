@@ -1,0 +1,36 @@
+
+.LoadingData{
+    font-size: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.LoadingData::after{
+    content: 'Loading...';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 65%;
+    letter-spacing: 3px;
+    font-weight: bold;
+    overflow: hidden;
+    animation: loadingData 3.5s linear infinite;
+}
+
+@keyframes loadingData{
+    0%{
+        width: 0%;
+        color: blue;
+    }
+    50%{
+        width: 50%;
+    }
+    100%{
+        width: 100%;
+    }
+}
