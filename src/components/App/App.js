@@ -8,6 +8,27 @@ import {BrowserRouter,Link,NavLink,Route} from 'react-router-dom'
 /*
   I don't need keep selectedMenuOption and Menu classes in state because this tool gives me .active.
    I'll made a decision based path  
+
+  Instead of this I have to create menu 
+  <li>
+    <Link path = "sadasdasd"/>
+  </li>
+  <li>
+    <Link path = "sadasdasd"/>
+  </li>
+  <li>
+    <Link path = "sadasdasd"/>
+  </li>
+  <li>
+    <Link path = "sadasdasd"/>
+  </li>
+
+  Nothing hang down to MainContent
+
+
+  Surely i don't need event state? Because React router' ll be resposibly for select suit content
+
+
 */
 
 
@@ -15,10 +36,10 @@ class App extends React.Component {
 
   constructor(props){
     super(props);
-    this.state = {
-      selectedMenuOption: 1,
-      menuOptionClasses: ["selected",undefined,undefined,undefined]
-    }
+    // this.state = {
+    //   selectedMenuOption: 1,
+    //   menuOptionClasses: ["selected",undefined,undefined,undefined]
+    // }
   }
 
   selectMenuOption = (e) => {
@@ -66,7 +87,7 @@ class App extends React.Component {
     return (
       <BrowserRouter>
         <Menu selectOption={this.selectMenuOption} menuOptionClasses={this.state.menuOptionClasses}/>
-        <MainContent selectedOption={this.state.selectedMenuOption}/>
+        {/* <MainContent selectedOption={this.state.selectedMenuOption}/> */}
         <Footer/>
       </BrowserRouter>
     );
