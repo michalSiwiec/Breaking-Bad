@@ -5,7 +5,7 @@ import '../../fontello/fontello-871b8ca9/css/fontello.css';
 
 const Footer = () => {
     return (
-        <footer>
+        <footer className="mainFooter">
             <div id="navContainer">
                 <div className="footerPart">
                     <h2>Footer Links</h2>

@@ -1,12 +1,21 @@
 
-li:hover{
-    cursor: pointer;
-    transition: border-bottom 0.15s 0.35s;
-    border-bottom: 3px solid rgba(147, 5, 0, 0.9);
+li.menuOption{
+    color: white;
+    border-bottom: 3px solid black;
 }
 
-.selected{
+li.menuOption:hover a{
+    cursor: pointer;
+    transition: border-bottom 0.1s linear 0.1s;
+    border-bottom: 3px solid rgba(147, 5, 0, 0.9);
     color: rgba(147, 5, 0, 0.9);
-    /* background-color: black; */
-    /* font-size: 30px; */
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a.active{
+    color: rgba(147, 5, 0, 0.9);
 }

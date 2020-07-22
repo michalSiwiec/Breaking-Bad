@@ -1,18 +1,16 @@
 
 
-footer{
+footer.mainFooter{
     width: 100%;
     background-image: linear-gradient(rgba(0, 0, 0,0.3),rgba(0,0,0,1));
     overflow: hidden;
     z-index: 2;
-    /* border: 5px solid white; */
     box-sizing: border-box;
     position: relative;
-    /* opacity: 0.7; */
 }
 
 
-footer::after{
+footer.mainFooter::after{
     content: '';
     width: 100%;
     height: 400px;
@@ -25,7 +23,7 @@ footer::after{
     z-index: -1;
 }
 
-footer #navContainer{
+footer.mainFooter #navContainer{
     width: 60%;
     height: 350px;
     display: flex;
@@ -36,7 +34,7 @@ footer #navContainer{
 }
 
 
-.footerPart{
+div#navContainer .footerPart{
     height: 300px;
     box-sizing: border-box;
     /* border: 2px solid green; */
@@ -45,52 +43,52 @@ footer #navContainer{
 }
 
 
-.footerPart:first-child{
+div#navContainer .footerPart:first-child{
     width: 22%;
 }
 
-.footerPart:first-child i{
+div#navContainer .footerPart:first-child i{
     color: rgba(147, 5, 0, 0.9);
 }
 
-.footerPart:nth-child(2){
+div#navContainer .footerPart:nth-child(2){
     width: 38%;
 }
 
-.footerPart:nth-child(2) li{
+div#navContainer .footerPart:nth-child(2) li{
     margin-bottom: 10px;
 }
 
-.footerPart:nth-child(2) i{
+div#navContainer .footerPart:nth-child(2) i{
     margin-right: 5px;
     color: rgba(147, 5, 0, 0.9);
 }
 
-.footerPart:nth-child(3){
+div#navContainer .footerPart:nth-child(3){
     border-right: 1px dotted gray;
 }
 
-.footerPart#quickContact{
+div#navContainer .footerPart#quickContact{
     width: 40%;
 }
 
-.footerPart h2{
+div#navContainer .footerPart h2{
     text-align: center;
     margin-bottom: 40px;
     font-size: 22px;
 }
 
-.footerPart ol{
+div#navContainer .footerPart ol{
     list-style-type: none;
 }
 
-.footerPart li {
+div#navContainer .footerPart li {
     padding-bottom: 8px;
     font-size: 16px;
 }
 
 
-.footerPart a{
+div#navContainer .footerPart a{
     text-decoration: none;
     color: white;
 }

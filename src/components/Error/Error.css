@@ -1,0 +1,24 @@
+
+div.ErrorContainer{
+    width: 80%;
+    margin: 0 auto;
+    height: 700px;
+    position: relative;
+}
+
+div.ErrorContainer > h1{
+    font-size: 50px;
+    color: red;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    line-height: 60px;
+}
+
+div.ErrorContainer > h1 > span{
+    font-size: 27px;
+    text-align: center;
+    color: white;
+}
