@@ -14,6 +14,7 @@
     content: 'Loading...';
     position: absolute;
     top: 0px;
+    color: rgba(0, 40, 61, 1);
     left: 0px;
     width: 65%;
     letter-spacing: 3px;
@@ -25,10 +26,6 @@
 @keyframes loadingData{
     0%{
         width: 0%;
-        color: blue;
-    }
-    50%{
-        width: 50%;
     }
     100%{
         width: 100%;

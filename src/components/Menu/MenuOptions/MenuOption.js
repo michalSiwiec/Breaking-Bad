@@ -1,12 +1,12 @@
 import React from 'react';
 import './MenuOptions.css';
+import {NavLink} from 'react-router-dom';
 
 
 const MenuOptions = (props) => {
-    const {clickMenuOption,id,value,classes} = props;
-
+    const {value,path} = props;
     return(
-        <li onClick={clickMenuOption} id={id} className={classes}>{value}</li>
+        <li className="menuOption"><NavLink to={path} exact>{value}</NavLink></li>
     )
 }
 
