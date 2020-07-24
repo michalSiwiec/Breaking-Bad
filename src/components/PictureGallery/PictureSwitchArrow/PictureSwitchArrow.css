@@ -1,0 +1,21 @@
+.gallery .pictureGallerySwitch{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 20%;
+    height: 30px;
+    /* background-color: tomato; */
+}
+
+.gallery .pictureGallerySwitch i{
+    font-size: 19px;
+    margin: 3px;
+    color: white;
+    opacity: 0.7;
+}
+
+.gallery .pictureGallerySwitch i:hover{
+    opacity: 1;
+    transition: opacity .5s;
+    cursor: pointer;
+}
