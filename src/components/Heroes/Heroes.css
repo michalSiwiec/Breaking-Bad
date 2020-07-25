@@ -1,0 +1,91 @@
+.heroesContainer{
+    width: 60%;
+    /* background-color: yellow; */
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 50px 30px 100px 45px;
+}
+
+.heroesContainer h1{
+    font-size: 60px;
+    text-align: center;
+    color: rgba(147, 5, 0, 0.9);
+    letter-spacing: 5px;
+    margin-bottom: 30px;
+}
+
+.heroesContainer .flexContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.heroesContainer .flexContainer .singlePictureContainer{
+    width: calc(50% - 60px);
+    height: calc(400px - 60px);
+    box-sizing: border-box;
+    margin: 30px;
+    /* border: 2px solid red; */
+    position: relative;
+}
+
+
+
+
+.singlePictureContainer .pictureCard-front,
+.singlePictureContainer .pictureCard-back
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    transform: perspective(900px) rotateY(0deg);
+    transition: transform 0.7s;
+}
+
+.singlePictureContainer .pictureCard-back{
+    background-color: rgba(37, 75, 73, 0.96);
+    z-index: -1;
+    box-sizing: border-box;
+    padding: 35px 20px;
+    transform: perspective(900px) rotateY(180deg);
+    position: relative;
+}
+
+.singlePictureContainer:hover .pictureCard-front{
+    transform: perspective(900px) rotateY(-180deg);
+    z-index: -1;
+    transition: transform 0.7s, z-index 0.7s;
+}
+
+.singlePictureContainer:hover .pictureCard-back{
+    transform: perspective(900px) rotateY(0deg);
+    transition: transform 0.7s;
+}
+
+
+.singlePictureContainer .pictureCard-back h3{
+    text-align: center;
+    font-size: 30px;
+
+}
+
+.singlePictureContainer .pictureCard-back ul{
+    list-style-type: none;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%,-50%);
+}
+
+.singlePictureContainer .pictureCard-back li{
+    line-height: 30px;
+}
+
+
+.singlePictureContainer .pictureCard-front img{
+    width: 100%;
+    height: 100%;
+}
+
